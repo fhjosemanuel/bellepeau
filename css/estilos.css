@@ -25,7 +25,7 @@ table {
 	border-spacing: 0;
 }
 #banner{
-    background: url(../img/35.png) no-repeat center top;
+    background: url('../public/img/35.png') no-repeat center top;
     background-size: cover;
     min-height: 630px;
 }
@@ -281,7 +281,7 @@ table {
     border-radius: 2px;
 }
 #event{
-    background: url('../img/81.jpg') no-repeat;
+    background: url('../public/img/81.jpg') no-repeat;
     background-size: cover;
 }
 .left-images img {
