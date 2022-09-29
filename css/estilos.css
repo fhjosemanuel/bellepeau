@@ -7,6 +7,9 @@ body {
     font-weight: 400;
     overflow-x: hidden;
 }
+:root{
+    scroll-behavior: smooth;
+}
 .p-0{
     padding: 0;
 }
@@ -17,7 +20,8 @@ body {
     padding-top: 30px;
 }
 .video{
-    width: 50%;
+    padding: 1px;
+    width: 60%;
     height: 400px;
 }
 ol, ul {
@@ -529,7 +533,7 @@ background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
         line-height: 16.6px;
     }
     .video{
-        width: 100%;
+        width: 95%;
         height: 400px;
     }
 }
@@ -539,6 +543,7 @@ background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
         border-bottom: 2px solid #A87F41;
     }
     .video{
+        width: 95%;
         height: 300px;
     }
 }
@@ -554,6 +559,7 @@ background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
         font-size: 35px;
     }
     .video{
+        width: 95%;
         height: 200px;
     }
     .header-p, body{
