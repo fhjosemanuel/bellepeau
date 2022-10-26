@@ -127,13 +127,18 @@ header{
     transform: translate(110%);
     box-shadow: 0 0 6px rgba(0, 0, 0, .5);
 }
-
-.spread{
-    transform: translate(0);
-}
 .menu-navegacion a{
     color: #fff;
     text-decoration: none;
+    text-align: center;
+}
+    .menu-navegacion a:hover{
+        color: #fff;
+        font-weight: bold;
+    }
+
+.spread{
+    transform: translate(0);
 }
 
 .titulo{
