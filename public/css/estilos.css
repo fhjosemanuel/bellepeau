@@ -207,7 +207,7 @@ header{
     flex-wrap: wrap;
 }
 /* PRODUCTOS */
-.products{
+.productos{
     background: #fff;
 }
 .contenedor-grid{
@@ -234,6 +234,9 @@ header{
             padding-top: 10px;
             padding-bottom: 10px;
         }
+.paginacion{
+    margin-top: 2rem;
+}
 /* / PRODUCTOS */
 .img-galeria{
     object-fit: cover;
@@ -342,16 +345,6 @@ footer{
     justify-content: center;
     margin-top: 20px;
 }
-.credits{
-    width: 100%;
-    color: #fff;
-    padding-top: 30px;
-    padding-bottom: 50px;
-}
-.credits a{
-    text-decoration: none;
-    color: #fff;
-}
 .social-media-icon{
     display: inline-block;
     margin-left: 20px;
@@ -372,6 +365,16 @@ footer{
     font-size: 30px;
     line-height: 60px;
 }
+.credits{
+    width: 100%;
+    color: #fff;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+.credits a{
+    text-decoration: none;
+    color: #fff;
+}
 
 .line{
     width: 90%;
@@ -382,6 +385,11 @@ footer{
     margin-bottom: 60px;
 }
 
+@media screen and (max-width: 900px){
+    .contenedor-grid .grid-group{
+        width: 45%;
+    }
+}
 @media screen and (max-width:800px){
     .menu-navegacion{
         width: 50vw;
@@ -437,6 +445,13 @@ footer{
         width: 80%;
         margin-bottom: 40px;
     }
+}
+@media screen and (max-width:720px){
+    .contenedor-grid .grid-group{
+        width: 95%;
+    }
+}
+@media screen and (max-width:540px){
 }
 @media screen and (max-width:300px){
     .menu-navegacion{
