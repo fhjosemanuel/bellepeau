@@ -14,15 +14,6 @@ body{
 	font-family: 'Open Sans', sans-serif;
     font-weight: 400;
 }
-.header{
-    font-size: 1.25rem;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    padding-left: 1rem;
-}
-    .header a{
-        margin-left: 20px;
-    }
     /* BOTONES */
     .boton {
         padding-top: 0.375rem;
@@ -34,7 +25,6 @@ body{
         font-weight: normal;
         border-radius: 0.375rem;
         border: 2px solid;
-        cursor: pointer;
     }
         .boton-000{
             background-color:  #000;
@@ -60,11 +50,12 @@ body{
     max-width: 1200px;
     overflow: hidden;
     margin: auto;
+    padding: 60px 0;
 }
 
 header{
     height: 100vh;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.61) 0%, rgba(0, 0, 0, 0.5) 100%), url(../img/35.png);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.61) 0%, rgba(0, 0, 0, 0.5) 100%), url(../img/pieli.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -190,12 +181,12 @@ header{
 
 .n-service{
     margin-bottom: 7px;
-    color: #9f8ad0;
+    color: #282828;
 }
 
 .number{
     display: inline-block;
-    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    background-image: linear-gradient(to top, #404040 0%, #c6c6c6 100%);
     width: 30px;
     height: 30px;
     color: #fff;
@@ -248,6 +239,7 @@ header{
 }
 /* / PRODUCTOS */
 .img-galeria{
+    border-radius: 5px;
     object-fit: cover;
     width: 30%;
     display: block;
@@ -305,6 +297,7 @@ header{
 }
 
 .cont-expert img{
+    border-radius: 5px;
     width: 80%;
     display: block;
     margin: 0 auto;
@@ -393,14 +386,7 @@ footer{
     background: #fff;
     margin-bottom: 60px;
 }
-
-.logo200{
-    width: 200px;
-    height: 200px;
-}
-.col-centered{
-    float: none; margin: 0 auto; 
-}
+ 
 
 @media screen and (max-width: 900px){
     .contenedor-grid .grid-group{
@@ -500,6 +486,7 @@ footer{
         width: 100%;
     }
 
+    
     .contact-us{
         width: 90%;
     }
@@ -523,18 +510,24 @@ footer{
 .text-end{
     text-align: end;
 }
-/* PADDING */
-    /* TOP */
-        .pt-2{padding-top: 0.5rem;}
-        .pt-4{padding-top: 1rem;}
-        .pt-5{padding-top: 1.25rem;}
-    /* BOTTOM */
-        .pb-2{padding-bottom: 0.5rem;}
-        .pb-4{padding-bottom: 1rem;}
-        .pb-5{padding-bottom: 1.25rem;}
-/* MARGIN */
-    /* TOP */
-        .mt-5{margin-top: 1.25rem;}
-    /* BOTTOM */
-        .mb-5{margin-bottom: 1.25rem;}
+
+.pt-2{
+    padding-top: 0.5rem;
+}
+.pt-4{
+    padding-top: 1rem;
+}
+.pt-5{
+    padding-top: 1.25rem;
+}
+
+.pb-2{
+    padding-bottom: 0.5rem;
+}
+.pb-4{
+    padding-bottom: 1rem;
+}
+.pb-5{
+    padding-bottom: 1.25rem;
+}
 /* ESTILOS CSS FUERA DE CURSO */
