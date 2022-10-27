@@ -68,6 +68,13 @@ header{
     color: #fcfcfc;
     font-weight: 500;
 }
+.col-centered{
+    float: none; margin: 0 auto; 
+}
+.logo200{
+    width: 200px;
+    height: 200px;
+}
 .head{
     text-align: center;
     padding: 0;
