@@ -394,6 +394,14 @@ footer{
     margin-bottom: 60px;
 }
 
+.logo200{
+    width: 200px;
+    height: 200px;
+}
+.col-centered{
+    float: none; margin: 0 auto; 
+}
+
 @media screen and (max-width: 900px){
     .contenedor-grid .grid-group{
         width: 45%;
