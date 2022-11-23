@@ -16,33 +16,44 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 
   <!-- https://getbootstrap.com/docs/5.2/getting-started/download/ -->
   <link rel="stylesheet" href="../../public/css/bootstrap-5.2.2-dist/css/bootstrap.min.css">
   <script src="../../public/css/bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"></script>
 
 </head>
-
+<input id="buscar" class="buscar" placeholder="Que deseas buscar ?">
+<button id="btn" class="btn" onclick="buscar()" >Buscar</button>
+<div id="imprimir" class="panel"></div> 
 <body>
 
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+    </label>
+<a href="#" class="enlace">
+  <img src="public/img/logo3.jpg" alt="" class="logo">
+</a>
+<ul>
+   <li><a class="active "href="../../index.html#inicio" style="text-decoration: none;" >Inicio</a></li>
+   <li><a href="../../views/quienessomos/quienessomos.html" style="text-decoration: none;">¿Quiénes somos?</a></li>
+        <li><a href="../../views/antecedentes/antecedentes.html" style="text-decoration: none;" >Antecedentes</a></li>
+        <!-- Mision y vision<li><a href="#mision">Misión</a></li>
+        <li><a href="#vision">Visión</a></li>-->
+        <li><a href="../../views/products/index.html" style="text-decoration: none;">Productos</a></li>
+        <li><a href="../../index.html#contacto" style="text-decoration: none;">Contacto</a></li>
+        <li><a href="../../views/auth/sign-in.html#login" style="text-decoration: none;">Iniciar Sesión</a></li>
+</nav>
+<section></section>
+</ul>
+</nav>
   <!-- HEADER -->
   <header class="header" id="inicio">
-    <img src="../../public/img/hamburguesa.svg" alt="" class="hamburger">
-    <nav class="menu-navegacion">
-      <a href="#inicio">Inicio</a>
-      <a href="#quienessomos">¿Quiénes somos?</a>
-      <a href="#antecedentes">Antecedentes</a>
-      <a href="#mision">Misión</a>
-      <a href="#vision">Visión</a>
-      <a href="./views/products/index.html">Productos</a>
-      <a href="#contacto">Contacto</a>
-      <a href="#vision">Iniciar Sesión</a>
-    </nav>
     <div class="contenedor head">
       <h1 class="logo-name">Antecedentes</h1>
-      <h2></h2>
-      <br>
-      <p></p>
+     
       <!-- <div class="search pt-4">
                 <input type="text" placeholder="Buscar">
             </div> -->
@@ -110,6 +121,7 @@
   <!-- JavaScript -->
   <script src="../../public/js/menu.js"></script>
   <script src=".../../public/js/lightbox.js"></script>
+  <script src="./public/js/buscador.js"></script>
 
   <!-- BOOTSTRAP -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
