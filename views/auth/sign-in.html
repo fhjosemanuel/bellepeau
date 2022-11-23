@@ -21,21 +21,33 @@
     <script src="./public/css/bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"></script>
 	
 </head>
+<input id="buscar" class="buscar" placeholder="Que deseas buscar ?">
+<button id="btn" class="btn" onclick="buscar()" >Buscar</button>
+<div id="imprimir" class="panel"></div> 
 <body>
-
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+    <a href="#" class="enlace">
+        <img src="C:\Users\Alan\Downloads\bellepeau-master\public\img/logo2.jpg" alt="" class="logo">
+    </a>
+    <ul>
+        <li><a class="active "href="../../index.html#inicio" style="text-decoration: none;" >Inicio</a></li>
+        <li><a href="../../views/quienessomos/quienessomos.html" style="text-decoration: none;" >¿Quiénes somos?</a></li>
+        <li><a href="../../views/antecedentes/antecedentes.html" style="text-decoration: none;">Antecedentes</a></li>
+        <!-- Mision y vision<li><a href="#mision">Misión</a></li>
+        <li><a href="#vision">Visión</a></li>-->
+        <li><a href="../../views/products/index.html" style="text-decoration: none;" >Productos</a></li>
+        <li><a href="../../index.html#contacto" style="text-decoration: none;">Contacto</a></li>
+        <li><a href="../../views/auth/sign-in.html#login" style="text-decoration: none;">Iniciar Sesión</a></li>
+    </nav>
+    <section></section>
+    </ul>
+    </nav>
 <!-- HEADER -->
     <header class="header" id="inicio">
-        <img src="../../public/img/hamburguesa.svg" alt="" class="hamburger">
-        <nav class="menu-navegacion">
-            <a href="../../index.html#inicio">Inicio</a>
-            <a href="../../index.html#quienessomos">¿Quiénes somos?</a>
-            <a href="../../views/antecedentes/antecedentes.html">Antecedentes</a>
-            <a href="../../index.html#mision">Misión</a>
-            <a href="../../index.html#vision">Visión</a>
-            <a href="../../views/products/index.html">Productos</a>
-            <a href="../../index.html#contacto">Contacto</a>
-            <a href="../../views/auth/sign-in.html#login">Iniciar Sesión</a>
-        </nav>
         <div class="contenedor head">
             <h1 class="logo-name">Belle Peau</h1>
             <h2>Cuidado de piel para adaptarse a su estilo de vida & salud</h2>
@@ -111,6 +123,7 @@
 <!-- JavaScript -->
     <script src="../../public/js/menu.js"></script>
     <script src="../../public/js/lightbox.js"></script>
+    <script src="./public/js/buscador.js"></script>
 
 <!-- BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
