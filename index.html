@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="./public/img/logo.jpeg">
     <link rel="stylesheet" href="./public/css/estilos.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <link rel="stylesheet" type="text/css"
         href="https://fonts.googleapis.com/css?family=Satisfy|Bree+Serif|Candal|PT+Sans">
     <link rel="stylesheet" type="text/css" href="public/fonts/font-awesome.min.css">
@@ -17,28 +17,45 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <!-- https://getbootstrap.com/docs/5.2/getting-started/download/ -->
     <link rel="stylesheet" href="./public/css/bootstrap-5.2.2-dist/css/bootstrap.min.css">
     <script src="./public/css/bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"></script>
 
 </head>
-
+<input id="buscar" class="buscar" placeholder="Que deseas buscar ?">
+<button id="btn" class="btn" onclick="buscar()" >Buscar</button>
+<div id="imprimir" class="panel"></div> 
 <body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+    <a href="#" class="enlace">
+        <img src="public/img/logo3.jpg" alt="" class="logo">
+    </a>
+    <ul>
+       <li><a class="active "href="#inicio" style="text-decoration: none;">Inicio</a></li>
+        <li><a href="views/quienessomos/quienessomos.html" style="text-decoration: none;">¿Quiénes somos?</a></li>
+        <li><a href="views/antecedentes/antecedentes.html" style="text-decoration: none;">Antecedentes</a></li>
+        <!-- Mision y vision<li><a href="#mision">Misión</a></li>
+        <li><a href="#vision">Visión</a></li>-->
+        <li><a href="./views/products/index.html" style="text-decoration: none;" >Productos</a></li>
+        <li><a href="#contacto" style="text-decoration: none;" >Contacto</a></li>
+        <li><a href="views/auth/sign-in.html" style="text-decoration: none;" >Iniciar Sesión</a></li>
+    </nav>
+    <section></section>
+    </ul>
+    </nav>
 
     <!-- HEADER -->
     <header class="header" id="inicio">
-        <img src="./public/img/hamburguesa.svg" alt="" class="hamburger">
+    <!-- MENU DESPEGABLE
+    <img src="./public/img/hamburguesa.svg" alt="" class="hamburger">
         <nav class="menu-navegacion">
-            <a href="#inicio">Inicio</a>
-            <a href="#quienessomos">¿Quiénes somos?</a>
-            <a href="views/antecedentes/antecedentes.html">Antecedentes</a>
-            <a href="#mision">Misión</a>
-            <a href="#vision">Visión</a>
-            <a href="./views/products/index.html">Productos</a>
-            <a href="#contacto">Contacto</a>
-            <a href="views/auth/sign-in.html">Iniciar Sesión</a>
-        </nav>
+            menu despegable -->
+           
         <div class="contenedor head">
             <h1 class="logo-name">Belle Peau</h1>
             <h2>Cuidado de piel para adaptarse a su estilo de vida & salud</h2>
@@ -79,27 +96,6 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-
-                        <div class="col-md-12 text-center">
-                            
-                            <h1 id="quienessomos" class="quienessomos">¿Quienes somos? </h1>
-                            <p class="header-p pb-3 text-justify">ssomos un equipo de trabajo que creo un sitio web de dermatología que se especializa en decirte como te podemos ayudar a mejorar tu piel, ya que en nuestro sitio web te indicaremos el correcto diagnostico para tratar tu piel, ya que muchas enfermedades de la piel, pueden ser un reflejo de alteraciones con otros órganos del cuerpo, aunque parezca increíble si no te cuidas la piel, te puedes afectar demasiado
-                            </p>
-                            
-                            
-                            <h1 id="mision" class="mision">Misión </h1>
-                            <p class="header-p pb-3 text-justify">somos un equipo de trabajo que tiene la mision de Aportar soluciones completas con la máxima calidad a las necesidades de cuidado en la piel y sacando al máximo provecho a la producción como empresa,
-                                así como la de introducir y formar a las nuevas generaciones para el cuidado propio.
-                                Y como cuidar la piel Todo ello a través de un reciclado constante de las técnicas obtenidas de nuestro gras equipo de trabajo
-                            </p>
-
-
-
-                            <h1 id="vision" class="vision">Visión </h1>
-                            <p class="header-p pb-3 text-justify">Ser el sitio web más reconocido dentro de la rama del cuidado de la dermatología, y ser reconocidos a nivel nacional como una de las páginas con mejor accesibilidad y usabilidad para el usuario dentro de su especialidad.
-                            </p>
-
-                        </div>
                     </div>
                     
                 </div>
@@ -186,6 +182,7 @@
 <!-- JavaScript -->
     <script src="./public/js/menu.js"></script>
     <script src="./public/js/lightbox.js"></script>
+    <script src="./public/js/buscador.js"></script>
 
 <!-- BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
