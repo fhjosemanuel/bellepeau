@@ -6,13 +6,31 @@
     box-sizing: border-box;
 }
 
-  .input-group.md-form.form-sm.form-2 input.red-border {
-    border: 1px solid #d1abab;
-  }
+#buscar {
+    position: relative;
+    width: 20%;
+    border-radius: 10px 10px 10px 10px;
+    margin: 0;
+    list-style: none;
+    
+    }
+    #buscar {
+    height: 32px;
+    border: 1px solid #0e0d0d;
+    background-color: #fff;
+    overflow: hidden;
+    list-style: none;
+    }
+
+.btn{
+    border-radius: 10px 10px 10px 10px;
+}
+    
+
   
 nav{
     background-color: rgb(250, 250, 250);
-    height: 80px;
+    height: 110px;
     width: 100%;
 }
 
@@ -23,6 +41,12 @@ nav{
 
 .logo{
     height: 55px;
+}
+.logo2{
+    height: 55px;
+    position: absolute;
+    width: 90%;
+    margin: 0;
 }
 
 nav ul{
@@ -37,15 +61,15 @@ nav ul li{
 }
 
 nav ul li a{
- color: #050505;
+ color: #000000;
  font-size: 18px;
 
 
 }
 
 li a.active, li a:hover{
-    background: rgb(225, 224, 235);
-    transition: 5s;
+    background: rgb(246, 245, 247);
+    transition: 2s;
 }
 
 .checkbtn{
@@ -77,9 +101,9 @@ li a.active, li a:hover{
       ul{
         position: fixed;
         width: 100%;
-        height: 120vh;
-        background: #f9fdff;
-        top: 10%;
+        height: 100vh;
+        background: #f9fbff;
+        top: 17%;
         left: -100%;
         text-align: center;
         transition: all .5s;
