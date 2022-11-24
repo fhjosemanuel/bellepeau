@@ -6,9 +6,31 @@
   box-sizing: border-box;
 }
 
+
+#buscar {
+  position: relative;
+  width: 15%;
+  border-radius: 10px 10px 10px 10px;
+  margin: 0;
+  list-style: none;
+  }
+  #buscar {
+  height: 32px;
+  border: 1px solid #0e0d0d;
+  background-color: #fff;
+  overflow: hidden;
+  list-style: none;
+  }
+
+.btn{
+  border-radius: 10px 10px 10px 10px;
+}
+  
+
+
 nav{
   background-color: rgb(250, 250, 250);
-  height: 80px;
+  height: 150px;
   width: 100%;
 }
 
@@ -40,8 +62,8 @@ font-size: 18px;
 }
 
 li a.active, li a:hover{
-  background: rgb(225, 224, 235);
-  transition: 5s;
+  background: rgb(246, 245, 247);
+  transition: 2s;
 }
 
 .checkbtn{
